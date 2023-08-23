@@ -4,9 +4,15 @@
     "version": "1.0",
     "manifest_version": 3,
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "service-worker.js"
     },
-    "permissions": ["storage", "activeTab", "tabs"],
+    "permissions": ["scripting", "storage", "activeTab", "tabs"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
