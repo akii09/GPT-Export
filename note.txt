@@ -1,0 +1,4 @@
+Primary dark color first: rgba(1, 181, 156, 1);
+Primary dark color second: #01B59C;
+Secondary light color first: #D1FFEC;
+Secondary light color second: rgba(239, 255, 244, 1);
